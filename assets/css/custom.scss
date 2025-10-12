@@ -1,103 +1,115 @@
 ---
 ---
 
-/* ---------- Base Tweaks ---------- */
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: #f9fafb;
-  color: #1f2937;
-  line-height: 1.6;
-  margin: 0;
+/* =========================
+   Base polish
+========================= */
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --ink: #0f172a;          /* deep slate */
+  --muted: #6b7280;        /* gray-500 */
+  --brand: #0ea5e9;        /* sky-500 */
+  --brand-ink: #075985;    /* sky-800 */
+  --ring: rgba(14,165,233,.35);
 }
 
-a {
-  color: #0ea5e9;
-  text-decoration: none;
-  font-weight: 500;
-}
-a:hover {
-  color: #0369a1;
-  text-decoration: underline;
-}
+html, body { background: var(--bg); color: var(--ink); }
+a { color: var(--brand); font-weight: 600; text-decoration: none; }
+a:hover { color: var(--brand-ink); text-decoration: underline; }
 
-/* ---------- Hero ---------- */
-.hero {
-  background: linear-gradient(180deg, #fff 0%, #f0f9ff 100%);
+/* Hide Minima’s auto H1 on home */
+.home .page-heading { display: none; }
+
+/* Wrapper width feel */
+.wrapper { max-width: 980px; }
+
+/* =========================
+   Header tweaks
+========================= */
+.site-header {
+  border: 0;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(17,24,39,.06);
+}
+.site-title { font-weight: 700; color: var(--ink); }
+.site-nav .page-link { color: var(--ink); }
+.site-nav .page-link:hover { color: var(--brand-ink); }
+
+/* =========================
+   Hero (sarcastic authority)
+========================= */
+.hero{
+  margin: 2rem 0 2.25rem;
   padding: 3rem 1.5rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-.hero .sub {
-  color: #6b7280;
-  margin-bottom: 1.25rem;
-}
-.hero .cta {
-  display: inline-block;
-  padding: 0.8rem 1.3rem;
-  background: #0ea5e9;
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-.hero .cta:hover {
-  background: #0284c7;
-}
-
-/* ---------- Section Styling ---------- */
-.trust {
-  background: #ffffff;
+  background: linear-gradient(180deg,#eef7ff 0%,#fff 65%);
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 3rem;
-}
-.trust h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-.trust li {
-  margin-bottom: 0.5rem;
-}
-
-/* ---------- Posts List ---------- */
-.post-list-heading {
-  font-weight: 700;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-}
-.post-list li {
-  margin-bottom: 1rem;
-}
-.post-link {
-  color: #0ea5e9;
-  font-weight: 600;
-}
-.post-link:hover {
-  color: #0284c7;
-}
-
-/* ---------- Footer ---------- */
-.site-footer {
-  background: #1f2937;
-  color: #e5e7eb;
-  padding: 2.5rem 1rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(2,6,23,.06);
   text-align: center;
-  border-top: none;
 }
-.site-footer a {
-  color: #93c5fd;
+.hero h1{
+  font-size: clamp(1.8rem, 3.2vw + 1rem, 2.6rem);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: .2px;
 }
-.site-footer a:hover {
-  color: white;
+.hero em { font-style: normal; text-decoration: underline; text-decoration-thickness: 5px; text-underline-offset: 6px; }
+.hero .sub{ color: var(--muted); max-width: 52ch; margin: .6rem auto 1.3rem; }
+
+/* Button */
+.hero .cta{
+  display:inline-block;
+  padding:.9rem 1.3rem;
+  border-radius:12px;
+  background: var(--brand);
+  color:#fff;
+  border: 1px solid transparent;
+  box-shadow: 0 6px 14px var(--ring);
+  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
+}
+.hero .cta:hover{ background:#0284c7; box-shadow:0 8px 18px var(--ring); transform: translateY(-1px); }
+.hero .cta:active{ transform: translateY(0); }
+
+/* =========================
+   Info card (“What we do”)
+========================= */
+.trust{
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem 1rem;
+  box-shadow: 0 6px 12px rgba(2,6,23,.04);
+}
+.trust h2{ font-size: 1.25rem; margin-bottom: .5rem; }
+.trust ul{ margin: .5rem 0 0 1.1rem; }
+.trust li{ margin: .4rem 0; }
+
+/* =========================
+   Post list
+========================= */
+.post-list-heading{
+  font-weight: 800;
+  font-size: 1.35rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: .35rem;
+  margin-top: 2rem;
+}
+.post-list>li{ margin: .9rem 0 1.1rem; }
+.post-meta{ color: var(--muted); }
+.post-link{ color: var(--brand); font-weight: 700; }
+.post-link:hover{ color: var(--brand-ink); }
+
+/* =========================
+   Reusable bits
+========================= */
+.badge{
+  display:inline-block;
+  font-size:.8rem; font-weight:700;
+  padding:.25rem .55rem; border-radius:999px;
+  background:#ecfeff; color:#155e75; border:1px solid #a5f3fc;
+}
+.kicker{
+  text-transform: uppercase; letter-spacing:.12em;
+  color: var(--muted); font-size:.78rem; font-weight:700;
 }
