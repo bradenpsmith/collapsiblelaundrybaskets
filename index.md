@@ -1,7 +1,6 @@
-
 ---
 layout: home
-title: "World’s Greatest Authority on Collapsible Laundry Baskets"
+title: "Worlds Greatest Authority on Collapsible Laundry Baskets"
 ---
 
 <div class="hero">
