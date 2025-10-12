@@ -1,9 +1,9 @@
 title: "Collapsible Laundry Baskets — The World's Greatest Authority"
 description: "Sarcastic, brutally honest reviews and guides on collapsible laundry baskets, hampers, and small-space laundry gear."
 url: "https://bradenpsmith.github.io"
-baseurl: "/collapsible-laundry-baskets"
+baseurl: "/collapsiblelaundrybaskets"
 author:
-  name: "Collapsible Laundry Council"
+  name: "Collapsible Laundry Baskets"
   email: "hello@YOUR_DOMAIN_HERE"
 
 theme: minima
