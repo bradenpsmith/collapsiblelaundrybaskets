@@ -12,11 +12,10 @@ title: "Worlds Greatest Authority on Collapsible Laundry Baskets"
 
 <section class="trust">
   <h2>What we actually do</h2>
-  <ul>
-    <li>Test collapsible baskets so you don’t end up with a sad, floppy fabric taco.</li>
-    <li>Explain what matters: capacity, collapse, handles, hinges, and “will this survive dorm laundry?”</li>
-    <li>Link to the best prices. If you buy through our links, we may earn a commission (at no extra cost to you).</li>
-  </ul>
+  <p>
+    We read the reviews, crunch the specs, and separate the sturdy from the sad — because someone had to. 
+    Turns out, we’re the collapsible laundry basket experts you never knew you needed.
+  </p>
 </section>
 <section class="top-picks">
   <h2>Top Picks (No Nonsense)</h2>
