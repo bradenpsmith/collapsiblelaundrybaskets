@@ -1,0 +1,29 @@
+
+/* Custom tweaks on top of minima */
+.affiliate-disclosure {
+  background: #fff7d6;
+  border: 1px solid #f0d87a;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.hero {
+  padding: 2rem 1rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero h1 { margin-bottom: 0.5rem; }
+.hero .sub { color: #6b7280; margin-bottom: 1rem; }
+.hero .cta {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #111827;
+  text-decoration: none;
+}
+.trust ul { padding-left: 1.25rem; }

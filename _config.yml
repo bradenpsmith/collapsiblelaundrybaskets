@@ -1,0 +1,46 @@
+
+title: "Collapsible Laundry Baskets — The World's Greatest Authority"
+description: "Sarcastic, brutally honest reviews and guides on collapsible laundry baskets, hampers, and small-space laundry gear."
+url: "https://YOUR_DOMAIN_HERE" # update after you set your custom domain or GitHub pages URL
+baseurl: "" # leave empty for root
+author:
+  name: "Collapsible Laundry Council"
+  email: "hello@YOUR_DOMAIN_HERE"
+
+# GitHub Pages supported theme & plugins
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Minima config
+minima:
+  skin: auto
+  social_links:
+    - platform: github
+      user_url: https://github.com/YOUR_GITHUB_USERNAME
+
+# Permalinks & collections
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 5
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Collapsible Laundry Council"
+      affiliate_disclosure: true
+
+# Build settings
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
