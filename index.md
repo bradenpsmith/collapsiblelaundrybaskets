@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Worlds Greatest Authority on Collapsible Laundry Baskets"
 ---
 
