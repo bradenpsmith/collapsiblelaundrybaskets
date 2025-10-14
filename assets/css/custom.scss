@@ -358,3 +358,71 @@ body:has(#nav-toggle:checked){ overflow:hidden; }
   }
   .site-nav .submenu a { padding: .85rem 1rem; }
 }
+/* When menu is open, allow internal scrolling and give it more room */
+#nav-toggle:checked ~ .site-nav{
+  max-height: 80vh;                  /* was 60vh */
+  overflow-y: auto;                  /* make it scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #475569;
+  font-size: .95rem;
+}
+
+.footer-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  height: 42px;
+  width: auto;
+  margin-bottom: .5rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  color: #0f172a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+.footer-meta {
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.footer-meta p {
+  margin: 0;
+  font-size: .85rem;
+}
+
+@media (max-width: 640px) {
+  .footer-nav ul {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}

@@ -1,0 +1,26 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="wrapper footer-wrapper">
+
+    <div class="footer-brand">
+      <a class="footer-logo" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/sitelogo.png' | relative_url }}" alt="{{ site.title }}" />
+      </a>
+      <p class="tagline">{{ site.description | default: "The World's Greatest Authority on Collapsible Laundry Baskets" }}</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="{{ '/guides/best-collapsible-laundry-baskets-2025/' | relative_url }}">Best Baskets 2025</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-meta">
+      <p>© {{ "now" | date: "%Y" }} {{ site.title }}.<br>
+      Proudly powered by too much coffee and markdown.</p>
+    </div>
+
+  </div>
+</footer>
