@@ -7,7 +7,7 @@
     <!-- Hidden checkbox drives state -->
     <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Toggle navigation">
 
-    <!-- Burger (now focusable + a11y) -->
+    <!-- Burger -->
     <label for="nav-toggle"
            class="burger"
            role="button"
@@ -19,13 +19,54 @@
 
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/guides/best-collapsible-laundry-baskets-2025/' | relative_url }}">Best Baskets</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        {% comment %}
+          Build menu from _config.yml: header_pages -> resolve to real pages.
+          Uses `nav_title` if set; falls back to `title`, then filename.
+        {% endcomment %}
+        {% assign paths = site.header_pages %}
+        {% if paths and paths.size > 0 %}
+          {% for pth in paths %}
+            {% assign p = site.pages | where: "path", pth | first %}
+            {% if p %}
+              {% assign label = p.nav_title | default: p.title | default: p.name %}
+              <li>
+                <a href="{{ p.url | relative_url }}"
+                   {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
+                  {{ label }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {%- comment -%}Fallback: list top-level pages if header_pages not set{%- endcomment -%}
+          {% for p in site.pages %}
+            {% if p.title and p.nav_exclude != true and p.url != '/feed.xml' %}
+              <li>
+                <a href="{{ p.url | relative_url }}"
+                   {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
+                  {{ p.nav_title | default: p.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </ul>
     </nav>
 
-    <!-- Click-outside scrim that also closes menu -->
+    <!-- Click-outside scrim -->
     <label for="nav-toggle" class="nav-scrim" aria-hidden="true"></label>
   </div>
 </header>
+
+<!-- (Optional) tiny JS to keep aria-expanded in sync + Esc close -->
+<script>
+  (function(){
+    const box = document.getElementById('nav-toggle');
+    const btn = document.querySelector('.burger');
+    function sync(){ btn && btn.setAttribute('aria-expanded', box && box.checked ? 'true' : 'false'); }
+    document.addEventListener('click', sync);
+    window.addEventListener('resize', sync);
+    document.addEventListener('keydown', e => { if(e.key==='Escape' && box && box.checked){ box.checked=false; sync(); }});
+    sync();
+  })();
+</script>
