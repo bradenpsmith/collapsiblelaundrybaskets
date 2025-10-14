@@ -277,3 +277,32 @@ a:hover { color: var(--brand-ink); text-decoration: underline; }
     transform: translateY(-7px) rotate(-45deg);
   }
 }
+
+/* Hide the checkbox but keep it functional */
+.nav-toggle{
+  position:absolute; left:-9999px; /* keeps it keyboard-safe via label */
+}
+
+/* Scrim (click-outside to close) — hidden by default */
+.nav-scrim{
+  display:none;
+  position:fixed; inset:0; background:rgba(0,0,0,.25);
+  z-index:55; /* between header (50) and dropdown (60) */
+}
+
+/* Improve burger keyboard focus */
+.burger:focus-visible{ outline:2px solid #93c5fd; border-radius:8px; }
+
+/* When open: show scrim & update aria-expanded (visual only in CSS) */
+#nav-toggle:checked ~ .nav-scrim{ display:block; }
+
+/* Prevent background scroll on modern browsers */
+body:has(#nav-toggle:checked){ overflow:hidden; }
+
+/* Ensure the dropdown sits above header */
+.site-nav{ z-index:60; }
+
+/* Reset state when resizing up (prevents “stuck open” look) */
+@media (min-width: 1025px){
+  .nav-scrim{ display:none !important; }
+}
