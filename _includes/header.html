@@ -14,39 +14,35 @@
 </label>
 
     <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <ul>
-        {% comment %}
-          Build menu from _config.yml: header_pages -> resolve to real pages.
-          Uses `nav_title` if set; falls back to `title`, then filename.
-        {% endcomment %}
-        {% assign paths = site.header_pages %}
-        {% if paths and paths.size > 0 %}
-          {% for pth in paths %}
-            {% assign p = site.pages | where: "path", pth | first %}
-            {% if p %}
-              {% assign label = p.nav_title | default: p.title | default: p.name %}
-              <li>
-                <a href="{{ p.url | relative_url }}"
-                   {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
-                  {{ label }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        {% else %}
-          {%- comment -%}Fallback: list top-level pages if header_pages not set{%- endcomment -%}
-          {% for p in site.pages %}
-            {% if p.title and p.nav_exclude != true and p.url != '/feed.xml' %}
-              <li>
-                <a href="{{ p.url | relative_url }}"
-                   {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
-                  {{ p.nav_title | default: p.title }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      </ul>
+     {% assign paths = site.header_pages %}
+<ul>
+  {% for pth in paths %}
+    {%- comment -%} Try pages first {%- endcomment -%}
+    {% assign p = site.pages | where: "path", pth | first %}
+
+    {%- comment -%} If not found, check docs in all collections {%- endcomment -%}
+    {% if p == nil %}
+      {% for coll in site.collections %}
+        {% assign d = coll.docs | where: "path", pth | first %}
+        {% if d %}{% assign p = d %}{% break %}{% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if p %}
+      {% assign label = p.nav_title
+          | default: p.title
+          | default: p.data.nav_title
+          | default: p.data.title
+          | default: p.basename_without_ext %}
+      <li>
+        <a href="{{ p.url | relative_url }}"
+           {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
+          {{ label }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
     </nav>
 
     <!-- Click-outside scrim -->
