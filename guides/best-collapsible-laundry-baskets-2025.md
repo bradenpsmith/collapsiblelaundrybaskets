@@ -1,8 +1,7 @@
-
 ---
-layout: page
+layout: default
 title: "Best Collapsible Laundry Baskets (2025)"
-nav_title: Best Baskets 2025
+nav_title: "Best Baskets 2025"
 permalink: /guides/best-collapsible-laundry-baskets-2025/
 ---
 
