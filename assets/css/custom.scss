@@ -306,3 +306,55 @@ body:has(#nav-toggle:checked){ overflow:hidden; }
 @media (min-width: 1025px){
   .nav-scrim{ display:none !important; }
 }
+/* Top-level list items */
+.site-nav ul { gap: 1.25rem; }
+.site-nav li { position: relative; }
+
+/* Submenu (desktop) */
+.site-nav .submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(2,6,23,.08);
+  padding: .4rem 0;
+  list-style: none;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+  z-index: 70;
+}
+
+.site-nav .submenu li { border-top: 1px solid #f1f5f9; }
+.site-nav .submenu li:first-child { border-top: 0; }
+.site-nav .submenu a { display: block; padding: .7rem 1rem; white-space: nowrap; }
+
+/* Show submenu on hover/focus */
+.site-nav li.has-children:hover > .submenu,
+.site-nav li.has-children:focus-within > .submenu {
+  opacity: 1; transform: translateY(0); pointer-events: auto;
+}
+
+/* Little caret toggle (clickable target, optional) */
+.submenu-toggle {
+  position: absolute; right: -14px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; border: 0; background: transparent; cursor: default;
+}
+.submenu-toggle::after {
+  content: "▾"; font-size: 12px; color: #475569;
+}
+
+/* Mobile: nested lists just stack; no absolute positioning */
+@media (max-width: 1024px){
+  .site-nav .submenu {
+    position: static;
+    opacity: 1; transform: none; pointer-events: auto;
+    border: 0; box-shadow: none; border-radius: 0;
+    padding: 0;
+  }
+  .site-nav .submenu a { padding: .85rem 1rem; }
+}

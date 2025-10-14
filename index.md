@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Worlds Greatest Authority on Collapsible Laundry Baskets"
+nav_title: "Home"
 ---
 <p class="kicker">totally unbiased experts *</p>
 

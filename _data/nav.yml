@@ -1,0 +1,16 @@
+items:
+  - title: Home
+    path: index.md
+
+  - title: Articles
+    children:
+      - path: guides/best-collapsible-laundry-baskets-2025.md   # uses page’s nav_title/title
+      # - path: guides/buying-guide.md
+      # - title: Dorm Laundry Tips         # you can hardcode too
+      #   url: /guides/dorm-laundry-tips/
+
+  - title: About
+    path: about.md
+
+  - title: Contact
+    path: contact.md

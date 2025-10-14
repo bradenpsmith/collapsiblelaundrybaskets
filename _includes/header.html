@@ -16,33 +16,59 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary">
      {% assign paths = site.header_pages %}
 <ul>
-  {% for pth in paths %}
-    {%- comment -%} Try pages first {%- endcomment -%}
-    {% assign p = site.pages | where: "path", pth | first %}
-
-    {%- comment -%} If not found, check docs in all collections {%- endcomment -%}
-    {% if p == nil %}
-      {% for coll in site.collections %}
-        {% assign d = coll.docs | where: "path", pth | first %}
-        {% if d %}{% assign p = d %}{% break %}{% endif %}
-      {% endfor %}
+  {% assign items = site.data.nav.items %}
+  {% for item in items %}
+    {% comment %} Resolve link + label from path/url {% endcomment %}
+    {% assign link_url = item.url %}
+    {% assign label = item.title %}
+    {% if item.path %}
+      {% assign p = site.pages | where: "path", item.path | first %}
+      {% if p == nil %}
+        {% for coll in site.collections %}
+          {% assign d = coll.docs | where: "path", item.path | first %}
+          {% if d %}{% assign p = d %}{% break %}{% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if p %}
+        {% assign link_url = p.url | relative_url %}
+        {% assign label = p.nav_title | default: p.title | default: p.data.nav_title | default: p.data.title | default: p.basename_without_ext %}
+      {% endif %}
     {% endif %}
 
-    {% if p %}
-      {% assign label = p.nav_title
-          | default: p.title
-          | default: p.data.nav_title
-          | default: p.data.title
-          | default: p.basename_without_ext %}
-      <li>
-        <a href="{{ p.url | relative_url }}"
-           {% if page.url == p.url %}aria-current="page" class="active"{% endif %}>
-          {{ label }}
-        </a>
-      </li>
-    {% endif %}
+    {% assign has_children = item.children and item.children.size > 0 %}
+    <li class="{% if has_children %}has-children{% endif %}">
+      <a href="{{ link_url }}"
+         {% if page.url == link_url %}aria-current="page" class="active"{% endif %}>
+        {{ label }}
+      </a>
+
+      {% if has_children %}
+        <button class="submenu-toggle" aria-haspopup="true" aria-expanded="false" tabindex="-1"></button>
+        <ul class="submenu">
+          {% for child in item.children %}
+            {% assign c_url = child.url %}
+            {% assign c_label = child.title %}
+            {% if child.path %}
+              {% assign cp = site.pages | where: "path", child.path | first %}
+              {% if cp == nil %}
+                {% for coll in site.collections %}
+                  {% assign cd = coll.docs | where: "path", child.path | first %}
+                  {% if cd %}{% assign cp = cd %}{% break %}{% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if cp %}
+                {% assign c_url = cp.url | relative_url %}
+                {% assign c_label = cp.nav_title | default: cp.title | default: cp.data.nav_title | default: cp.data.title | default: cp.basename_without_ext %}
+              {% endif %}
+            {% endif %}
+            <li><a href="{{ c_url }}">{{ c_label }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
   {% endfor %}
 </ul>
+
     </nav>
 
     <!-- Click-outside scrim -->
