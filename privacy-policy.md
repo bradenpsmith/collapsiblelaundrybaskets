@@ -1,58 +1,98 @@
-
 ---
-layout: page
+layout: default
 title: "Privacy Policy"
+nav_title: "Privacy Policy"
 permalink: /privacy-policy/
+description: "How we handle your data, cookies, and affiliate links on CollapsibleLaundryBasket.com."
 ---
 
-# Privacy Policy
+<div class="hero">
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated: {{ "now" | date: "%B %e, %Y" }}</p>
+</div>
 
-_Last updated: October 2025_
+<section class="trust">
+  <h2>Who We Are</h2>
+  <p>
+    This website (<strong>CollapsibleLaundryBasket.com</strong>) is operated by a small, independent publisher.
+    Our mission is simple: to review collapsible laundry baskets and related home products.
+  </p>
+</section>
 
-At **CollapsibleLaundryBaskets.com**, we take your privacy almost as seriously as we take collapsible laundry baskets. (So, very seriously.)
+<section class="trust">
+  <h2>What Personal Data We Collect and Why</h2>
+  <ul>
+    <li><strong>Analytics:</strong> We use privacy-friendly analytics (for example Google Analytics or Plausible) 
+    to understand which pages are popular. These tools collect anonymized usage data such as pages visited,
+    browser type, and general location (city/region), but never your name or exact address.</li>
 
-## Information We Collect
+    <li><strong>Contact Form or Email:</strong> If you contact us directly, we’ll receive your name,
+    email address, and whatever information you include in your message. 
+    This data is used only to reply and is not shared or sold.</li>
 
-We collect minimal data:
-- Basic analytics data via **Google Analytics** (page views, device type, approximate location, etc.).
-- Anonymous affiliate link clicks to see which products people actually like.
+    <li><strong>Cookies:</strong> We may use cookies or similar technologies to remember preferences,
+    measure performance, and support affiliate tracking. You can clear or block cookies through your browser settings.</li>
+  </ul>
+</section>
 
-We do **not** collect personally identifiable information unless you voluntarily email or contact us.
+<section class="trust">
+  <h2>Affiliate Links & Disclosures</h2>
+  <p>
+    CollapsibleLaundryBasket.com participates in affiliate programs such as the
+    <strong>Amazon Services LLC Associates Program</strong> and others.
+    When you click a product link and make a purchase, we may earn a small commission—at no extra cost to you.
+  </p>
+  <p>
+    These links help keep the site running and the laundry puns coming.
+    We do not have access to any personal or payment information you provide to retailers.
+  </p>
+</section>
 
-## How We Use Your Information
+<section class="trust">
+  <h2>Embedded Content from Other Websites</h2>
+  <p>
+    Articles may include embedded content (like videos, images, or widgets).
+    Embedded content behaves exactly as if you visited the other website directly,
+    which may collect data about you, use cookies, or track your interaction.
+  </p>
+</section>
 
-- To understand which articles people read (so we can write fewer bad ones).
-- To monitor site performance and fix bugs.
-- To earn a small commission if you click through an affiliate link and make a purchase — at no extra cost to you.
+<section class="trust">
+  <h2>Data Retention</h2>
+  <p>
+    We keep contact form submissions and emails only as long as needed for customer service.
+    Analytics data is stored in aggregate, anonymous form.
+  </p>
+</section>
 
-## Cookies
+<section class="trust">
+  <h2>Your Rights</h2>
+  <p>
+    You can request that we erase any personal information you’ve provided via email or contact form.
+    This does not include data we are required to keep for legal or security purposes.
+  </p>
+</section>
 
-We use cookies for Google Analytics and affiliate tracking. You can block or clear them anytime in your browser settings, but then we won’t know that you loved reading about collapsible baskets.
+<section class="trust">
+  <h2>Children’s Privacy</h2>
+  <p>
+    Our content is intended for a general audience and is not directed toward children under 13.
+    We do not knowingly collect personal information from minors.
+  </p>
+</section>
 
-## Affiliate Disclosure
+<section class="trust">
+  <h2>Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy occasionally to reflect site or legal changes.
+    The updated version will always appear on this page with a new “Last updated” date.
+  </p>
+</section>
 
-Some links on this site are affiliate links, meaning we may earn a commission if you purchase through them. This doesn’t affect the price you pay — it just helps fund our relentless research into which basket folds best.
-
-## Third-Party Services
-
-We rely on third-party tools like:
-- **Google Analytics** — to understand how visitors interact with our site.
-- **Affiliate networks** — to track referrals and pay commissions.
-
-Each third-party provider has its own privacy policy and data handling practices.
-
-## Data Security
-
-This site runs on GitHub Pages and uses SSL encryption. We do not store any sensitive data locally or on third-party servers.
-
-## Changes to This Policy
-
-If we update this Privacy Policy (usually because a lawyer said we should), we’ll post the new version right here.
-
-## Contact
-
-For any privacy concerns, you can reach us at **privacy@collapsiblelaundrybaskets.com**.
-
----
-
-**TL;DR:** We don’t sell your data, we use basic analytics, and the only thing we track is which collapsible basket you might buy next.
+<section class="trust">
+  <h2>Contact</h2>
+  <p>
+    Questions or requests about privacy?  
+    Email us at <a href="mailto:collapsiblelaundrybaskets@gmail.com">collapsiblelaundrybaskets@gmail.com</a>.
+  </p>
+</section>

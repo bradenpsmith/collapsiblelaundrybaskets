@@ -14,7 +14,8 @@ nav_title: "Home"
 <section class="trust">
   <h2>What we actually do</h2>
   <p>
-    We read the reviews, crunch the specs, and separate the sturdy from the sad — because someone had to. 
+    We read the reviews, crunch the specs, and separate the sturdy from the sad - because someone had to. 
+	<br/>
     Turns out, we’re the collapsible laundry basket experts you never knew you needed.
   </p>
 </section>
