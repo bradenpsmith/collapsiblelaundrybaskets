@@ -1,12 +1,16 @@
 title: "Collapsible Laundry Baskets — The World's Greatest Authority"
 description: "Sarcastic, brutally honest reviews and guides on collapsible laundry baskets, hampers, and small-space laundry gear."
-url: "https://bradenpsmith.github.io"
-baseurl: "/collapsiblelaundrybaskets"
+
+# If your custom domain is live, use it here. Otherwise use the pages.dev URL for now.
+url: "https://collapsiblelaundrybaskets.pages.dev/"   # or "https://<your-project>.pages.dev"
+baseurl: ""                                   # root of the domain
+
 author:
   name: "Collapsible Laundry Baskets"
-  email: "hello@YOUR_DOMAIN_HERE"
+  email: "collapsiblelaundrybaskets@gmail.com"
 
 theme: minima
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -16,11 +20,15 @@ minima:
   skin: auto
   social_links:
     - platform: github
-      user_url: https://github.com/YOUR_GITHUB_USERNAME
+      user_url: https://github.com/bradenpsmith
 
-permalink: /:categories/:year/:month/:day/:title/
+# cleaner URLs for pages/guides
+permalink: /:categories/:title/
 
 markdown: kramdown
+
+timezone: America/Chicago  # optional but nice for dates
+
 exclude:
   - README.md
   - Gemfile
@@ -28,9 +36,3 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
-
-header_pages:
-  - index.md
-  - guides/best-collapsible-laundry-baskets-2025.md
-  - about.md
-  - contact.md
