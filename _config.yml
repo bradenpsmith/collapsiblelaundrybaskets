@@ -1,9 +1,9 @@
 title: "Collapsible Laundry Baskets — The World's Greatest Authority"
 description: "Sarcastic, brutally honest reviews and guides on collapsible laundry baskets, hampers, and small-space laundry gear."
 
-# If your custom domain is live, use it here. Otherwise use the pages.dev URL for now.
-url: "https://collapsiblelaundrybaskets.pages.dev/"   # or "https://<your-project>.pages.dev"
-baseurl: ""                                   # root of the domain
+# ⚙️ Domain Settings
+url: "https://collapsiblelaundrybaskets.com"   # use your custom domain once it's live
+baseurl: ""                                   # leave blank if site is served at the root
 
 author:
   name: "Collapsible Laundry Baskets"
@@ -11,6 +11,7 @@ author:
 
 theme: minima
 
+# 🧩 Plugins — all supported by Cloudflare Pages
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -18,17 +19,14 @@ plugins:
 
 minima:
   skin: auto
-  social_links:
-    - platform: github
-      user_url: https://github.com/bradenpsmith
 
-# cleaner URLs for pages/guides
+# ✅ Cleaner URLs for guides/posts
 permalink: /:categories/:title/
 
 markdown: kramdown
+timezone: America/Chicago
 
-timezone: America/Chicago  # optional but nice for dates
-
+# 🚫 Things Jekyll should not process
 exclude:
   - README.md
   - Gemfile
@@ -36,3 +34,10 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+
+# Optional: make sure sitemap has correct host for absolute URLs
+defaults:
+  - scope:
+      path: ""
+    values:
+      sitemap: true
