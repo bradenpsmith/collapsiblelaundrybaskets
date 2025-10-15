@@ -17,7 +17,7 @@ Every pick below either **collapses, folds, or pops up** - no decorative woven b
 ---
 
 ## SAMMART 42 L Collapsible Plastic Laundry Basket
-![SAMMART 42L Collapsible Laundry Basket](https://m.media-amazon.com/images/I/514Z9TAWHDL._AC_SX569_.jpg)
+![SAMMART 42L Collapsible Laundry Basket](https://www.sammart.us/cdn/shop/products/41nt-SN3j5L.jpg?v=1749539809&width=713)
 **[Buy on Amazon](https://amzn.to/48w5nRA)**  
 **Rating:** 4.7 ★ (14 000 + reviews) **Price:** ≈ $29  
 
@@ -27,7 +27,6 @@ The undisputed champ (in our mind anyways). Rigid plastic, ergonomic handles, an
 ---
 
 ## CleverMade 64 L Collapsible Laundry Basket (2-Pack)
-![CleverMade 64L Collapsible Laundry Basket](https://m.media-amazon.com/images/I/7137oBNywuL._AC_SX569_.jpg)
 **[Buy on Amazon](https://amzn.to/4odXZPc)**  
 **Rating:** 4.7 ★ (2 400 + reviews) **Price:** ≈ $44.99  
 
@@ -37,7 +36,6 @@ Industrial-grade plastic with reinforced hinges. Pops open when you need it, fol
 ---
 
 ## DOKEHOM 90 L Foldable Laundry Hamper
-![DOKEHOM 90L Foldable Laundry Hamper](https://m.media-amazon.com/images/I/71pg7n+0TuL._AC_SX569_.jpg)
 **[Buy on Amazon](https://amzn.to/4okdu8b)**  
 **Rating:** 4.6 ★ (48 000 + reviews) **Price:** ≈ $11.99  
 
@@ -47,7 +45,6 @@ Lightweight, tall, and collapsible. The whole thing folds flat when company’s 
 ---
 
 ## HOUSE AGAIN Reinforced Mesh Pop-Up Hamper
-![HOUSE AGAIN Reinforced Mesh Pop-Up Hamper](https://m.media-amazon.com/images/I/81IqE27h71L._AC_SL1280_.jpg)
 **[Buy on Amazon](https://amzn.to/4n607HU)**  
 **Rating:** 4.7 ★ (1 200 + reviews) **Price:** ≈ $8.99  
 
@@ -57,7 +54,6 @@ The classic mesh pop-up - only sturdier. Carbon-steel wire frame, breathable sid
 ---
 
 ## Fenlosi Tear-Proof Pop-Up Hamper
-![Fenlosi Pop-Up Hamper](https://m.media-amazon.com/images/I/81aGJZXhOnL._AC_SX522_.jpg)
 **[Buy on Amazon](https://amzn.to/4hapQgV)**  
 **Rating:** 4.8 ★ (900 + reviews) **Price:** ≈ $14.99  
 
@@ -67,7 +63,6 @@ Built for the stair-carrying, laundry-lugging life. Reinforced handles and tear-
 ---
 
 ## SONGMICS Foldable 2-Section Laundry Basket with Lid
-![SONGMICS 2-Section Foldable Hamper](https://m.media-amazon.com/images/I/71JnMiBHBrL._AC_SX679_.jpg)
 **[Buy on Amazon](https://amzn.to/4oogDEj)**  
 **Rating:** 4.6 ★ (120 + reviews) **Price:** ≈ $59.99  
 
@@ -77,7 +72,6 @@ Two bins, one foldable frame. Keeps lights and darks separate and your floor sli
 ---
 
 ## SAMMART 30 L Collapsible 3 Handled Plastic Laundry Basket
-![SAMMART 30L Collapsible 3 Handled Plastic Laundry Basket](https://m.media-amazon.com/images/I/51SOGENBIgL._AC_SX300_SY300_QL70_FMwebp_.jpg)
 **[Buy on Amazon](https://amzn.to/3WDEFix)**  
 **Rating:** 4.7 ★ (3 300 + reviews) **Price:** ≈ $22.99  
 
@@ -87,7 +81,6 @@ A smaller take on the SAMMART legend. Perfect for road trips, RV life, or keepin
 ---
 
 ## Jay Franco Character Pop-Up Hampers
-![Jay Franco Pop-Up Hamper](https://m.media-amazon.com/images/I/81cX9me20rL._AC_SY879_.jpg)
 **[Buy on Amazon](https://amzn.to/4h8Hl13)**  
 **Rating:** 4.7 ★ (10 900 + reviews) **Price:** ≈ $14.99  
 
@@ -97,7 +90,6 @@ Fun designs that trick your kids into using them. Durable mesh, quick-fold frame
 ---
 
 ## Joseph Joseph Hold-All Max Collapsible 55L
-![Joseph Joseph Hold-All Max Collapsible 55L](https://m.media-amazon.com/images/I/81mUpbeTzmL._AC_SX679_.jpg)
 **[Buy on Amazon](https://amzn.to/3KQTyLQ)**  
 **Rating:** 4.7 ★ (670 + reviews) **Price:** ≈ $35.00 
 
