@@ -17,7 +17,6 @@ Every pick below either **collapses, folds, or pops up** - no decorative woven b
 ---
 
 ## SAMMART 42 L Collapsible Plastic Laundry Basket
-![SAMMART 42L Collapsible Laundry Basket](https://www.sammart.us/cdn/shop/products/41nt-SN3j5L.jpg?v=1749539809&width=713)
 **[Buy on Amazon](https://amzn.to/48w5nRA)**  
 **Rating:** 4.7 ★ (14 000 + reviews) **Price:** ≈ $29  
 
